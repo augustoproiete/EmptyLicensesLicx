@@ -1,0 +1,18 @@
+#Ignore thumbnails created by Windows
+Thumbs.db
+
+#Ignore metadata created by OSX
+.DS_Store
+._*
+
+#Ignore files created by Visual Studio
+.vs/
+*.user
+*.suo
+[Oo]bj/
+[Bb]in/
+[Dd]ebug/
+[Rr]elease/
+
+#Ignore files created by ReSharper
+_ReSharper*/

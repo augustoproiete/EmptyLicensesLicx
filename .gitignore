@@ -1,3 +1,7 @@
+#Ignore files created by build.cmd
+.nuget/
+out/
+
 #Ignore thumbnails created by Windows
 Thumbs.db
 

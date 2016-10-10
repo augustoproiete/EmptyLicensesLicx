@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata minClientVersion="2.5">
+    <id>EmptyLicensesLicx</id>
+    <version>$version$</version>
+    <title>Empty Licenses.licx for .NET projects</title>
+    <authors>Caio Proiete</authors>
+    <iconUrl>https://raw.github.com/caioproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
+    <licenseUrl>https://github.com/caioproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/caioproiete/EmptyLicensesLicx</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>An easy approach to resolve issues with compiling the licenses.licx file.</summary>
+    <description>
+      Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file is always empty before the compiler runs.
+    </description>
+    <copyright>Copyright (c) Caio Proiete 2016</copyright>
+    <tags>licenses licx Licenses.licx CI MSBuild Infragistics DevExpress</tags>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src="readme.txt" />
+    <file src="build\EmptyLicensesLicx.targets" target="build" />
+  </files>
+</package>

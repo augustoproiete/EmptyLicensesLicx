@@ -13,7 +13,7 @@
     <description>
       Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file is always empty before the compiler runs.
     </description>
-    <copyright>Copyright (c) Caio Proiete 2016</copyright>
+    <copyright>Copyright (c) Caio Proiete 2016-2017</copyright>
     <tags>licenses licx Licenses.licx CI MSBuild Infragistics DevExpress</tags>
     <developmentDependency>true</developmentDependency>
   </metadata>

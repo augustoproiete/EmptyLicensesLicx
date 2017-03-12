@@ -11,7 +11,7 @@ file in this project is always empty before the compiler tries to compile it.
 
 i.e. Visual Studio will continue to modify the Properties\licenses.licx file as
 you make changes to this project, but every time you compile this project, the
-contents of the Properties\licenses.licx file will be removed and the fille will
-be empty, before compiler runs.
+contents of the Properties\licenses.licx file will be removed and the file will
+become empty, before the compiler runs.
 
 Remember to commit the empty Properties\licenses.licx to your source control!

@@ -11,9 +11,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>An easy approach to resolve issues with compiling the licenses.licx file.</summary>
     <description>
-      Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file is always empty before the compiler runs.
+      Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file* is always empty before the compiler runs.
+      * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
-    <copyright>Copyright (c) Caio Proiete 2016-2017</copyright>
+    <copyright>Copyright (c) Caio Proiete 2016-2018</copyright>
     <tags>licenses licx Licenses.licx CI MSBuild Infragistics DevExpress</tags>
     <developmentDependency>true</developmentDependency>
   </metadata>

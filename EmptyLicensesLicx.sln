@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestHarness", "tests\ConsoleAppTestHarness\ConsoleAppTestHarness.csproj", "{21CD7567-4293-4758-808D-3BB4E0CCFBEE}"
 EndProject
@@ -49,5 +49,8 @@ Global
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C9E63CEE-928C-4183-A609-C58169BC90FF} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C778E55F-31DE-426A-8783-87A5406AB90E} = {C3C6F07A-C60E-466C-A305-7E16996B9307}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F5B2B04F-C390-4B98-926D-0B123B898D19}
 	EndGlobalSection
 EndGlobal

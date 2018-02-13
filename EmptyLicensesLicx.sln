@@ -22,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{C778E55F
 		src\build\EmptyLicensesLicx.targets = src\build\EmptyLicensesLicx.targets
 	EndProjectSection
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWinFormsAppTestHarness", "tests\VBNetWinFormsAppTestHarness\VBNetWinFormsAppTestHarness.vbproj", "{428915B2-357C-4BD1-BDFA-977A5B05E648}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +55,7 @@ Global
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C9E63CEE-928C-4183-A609-C58169BC90FF} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C778E55F-31DE-426A-8783-87A5406AB90E} = {C3C6F07A-C60E-466C-A305-7E16996B9307}
+		{428915B2-357C-4BD1-BDFA-977A5B05E648} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5B2B04F-C390-4B98-926D-0B123B898D19}

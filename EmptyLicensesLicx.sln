@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestHarness", "tests\ConsoleAppTestHarness\ConsoleAppTestHarness.csproj", "{21CD7567-4293-4758-808D-3BB4E0CCFBEE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpConsoleAppTestHarness", "tests\CSharpConsoleAppTestHarness\CSharpConsoleAppTestHarness.csproj", "{21CD7567-4293-4758-808D-3BB4E0CCFBEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppTestHarness", "tests\WpfAppTestHarness\WpfAppTestHarness.csproj", "{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWpfAppTestHarness", "tests\CSharpWpfAppTestHarness\CSharpWpfAppTestHarness.csproj", "{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B668FBE-1754-467B-9D1E-7AF0799013AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsAppTestHarness", "tests\WinFormsAppTestHarness\WinFormsAppTestHarness.csproj", "{C9E63CEE-928C-4183-A609-C58169BC90FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinFormsAppTestHarness", "tests\CSharpWinFormsAppTestHarness\CSharpWinFormsAppTestHarness.csproj", "{C9E63CEE-928C-4183-A609-C58169BC90FF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3C6F07A-C60E-466C-A305-7E16996B9307}"
 	ProjectSection(SolutionItems) = preProject

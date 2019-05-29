@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0"?>
-<package>
-  <metadata minClientVersion="2.5">
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata minClientVersion="3.3">
     <id>EmptyLicensesLicx</id>
     <version>$version$</version>
     <title>Empty Licenses.licx for .NET projects</title>
     <authors>Caio Proiete</authors>
+    <owners>caioproiete</owners>
     <iconUrl>https://raw.github.com/caioproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
     <licenseUrl>https://github.com/caioproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
     <repository type="git" url="https://github.com/caioproiete/EmptyLicensesLicx" />
@@ -16,6 +17,7 @@
       * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
     <copyright>Copyright (c) Caio Proiete 2016-2018</copyright>
+    <language>en-US</language>
     <tags>licenses licx Licenses.licx CI MSBuild Infragistics DevExpress</tags>
     <developmentDependency>true</developmentDependency>
   </metadata>

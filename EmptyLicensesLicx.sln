@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpConsoleAppTestHarness", "tests\CSharpConsoleAppTestHarness\CSharpConsoleAppTestHarness.csproj", "{21CD7567-4293-4758-808D-3BB4E0CCFBEE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWpfAppTestHarness", "tests\CSharpWpfAppTestHarness\CSharpWpfAppTestHarness.csproj", "{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B668FBE-1754-467B-9D1E-7AF0799013AB}"
@@ -41,10 +39,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{21CD7567-4293-4758-808D-3BB4E0CCFBEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21CD7567-4293-4758-808D-3BB4E0CCFBEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21CD7567-4293-4758-808D-3BB4E0CCFBEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21CD7567-4293-4758-808D-3BB4E0CCFBEE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -62,7 +56,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{21CD7567-4293-4758-808D-3BB4E0CCFBEE} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C9E63CEE-928C-4183-A609-C58169BC90FF} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C778E55F-31DE-426A-8783-87A5406AB90E} = {C3C6F07A-C60E-466C-A305-7E16996B9307}

@@ -1,35 +1,104 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
+﻿<Project ToolsVersion="15.0" InitialTargets="CreateEmptyLicenseLicx" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask
+		TaskName="CreateEmptyLicenseLicxTask"
+		TaskFactory="CodeTaskFactory"
+		AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<ProjectName ParameterType="System.String" Required="true" />
+			<ProjectDir ParameterType="System.String" Required="true" />
+			<Language ParameterType="System.String" Required="true" />
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System" />
+			<Using Namespace="System.IO" />
+			<Using Namespace="System.Security" />
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+
+try
+{
+    string licxDirectoryPath;
+
+    switch (Language)
+		{
+		    case "C#":
+				    licxDirectoryPath = Path.Combine(ProjectDir, "Properties");
+						break;
+						
+		    case "VB":
+				    licxDirectoryPath = Path.Combine(ProjectDir, "My Project");
+						break;
+
+		    default:
+				    throw new NotSupportedException(ProjectName + ": Language not supported: " + Language);
+		}
+
+    if (!Directory.Exists(licxDirectoryPath))
+		{
+				Log.LogMessage(MessageImportance.Normal, ProjectName + " -> " + licxDirectoryPath);
+
+				try
+				{
+            Directory.CreateDirectory(licxDirectoryPath);
+				}
+				catch(Exception dex)
+				{
+            if (dex is IOException
+                || dex is UnauthorizedAccessException
+                || dex is PathTooLongException
+                || dex is DirectoryNotFoundException
+                || dex is SecurityException)
+            {
+                Log.LogError(ProjectName + ": Error trying to create directory " + licxDirectoryPath + ". " + dex.Message);
+            }
+            else
+            {
+                throw;
+            }
+				}
+		}
+
+    var licxFilePath = Path.Combine(licxDirectoryPath, "licenses.licx");
+
+    var licxFileInfo = new FileInfo(licxFilePath);
+    if (licxFileInfo.Exists)
+    {
+		    if (licxFileInfo.Length == 0)
+				{
+            return true;
+				}
+
+				if (licxFileInfo.IsReadOnly)
+				{
+            licxFileInfo.IsReadOnly = false;
+				}
+    }
+
+		Log.LogMessage(MessageImportance.High, ProjectName + " -> " + licxFilePath);
+
+    new FileStream(licxFilePath, FileMode.Create, FileAccess.Write, FileShare.Read)
+		    .Dispose();
+
+		Log.LogMessage(MessageImportance.Normal, ProjectName + ": Empty licenses.licx file created");
+}
+catch(Exception ex)
+{
+    Log.LogError(ProjectName + ": Error creating licenses.licx file. " + ex.Message);
+}
+
+]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<PropertyGroup>
     <CompileLicxFilesDependsOn>
-      $(CompileLicxFilesDependsOn);
-      EmptyLicxFileBeforeCompile;
-      EmptyVbLicxFileBeforeCompile;
-    </CompileLicxFilesDependsOn>
+			$(CompileLicxFilesDependsOn);
+			CreateEmptyLicenseLicx;
+		</CompileLicxFilesDependsOn>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <EmptyLicxLicensesFile Condition="'$(EmptyLicxLicensesFile)'==''">$(ProjectDir)Properties\licenses.licx</EmptyLicxLicensesFile>
-    <EmptyLicxLicensesFileVb Condition="'$(EmptyLicxLicensesFileVb)'==''">$(ProjectDir)My Project\licenses.licx</EmptyLicxLicensesFileVb>
-  </PropertyGroup>
-
-  <Target Name="EmptyLicxFileBeforeCompile" Condition="Exists('$(EmptyLicxLicensesFile)')">
-    <Message Text="EmptyLicensesLicx ($(ProjectName)): Removing the contents of Properties\licenses.licx" Importance="High" />
-
-    <Exec Command="copy /y NUL &quot;$(EmptyLicxLicensesFile)&quot;"
-        StandardErrorImportance="High"
-        StandardOutputImportance="Low"
-        WorkingDirectory="$(ProjectDir)"
-        ContinueOnError="true" />
-  </Target>
-
-  <Target Name="EmptyVbLicxFileBeforeCompile" Condition="Exists('$(EmptyLicxLicensesFileVb)')">
-    <Message Text="EmptyLicensesLicx ($(ProjectName)): Removing the contents of My Project\licenses.licx" Importance="High" />
-
-    <Exec Command="copy /y NUL &quot;$(EmptyLicxLicensesFileVb)&quot;"
-        StandardErrorImportance="High"
-        StandardOutputImportance="Low"
-        WorkingDirectory="$(ProjectDir)"
-        ContinueOnError="true" />
+  <Target Name="CreateEmptyLicenseLicx" BeforeTargets="CompileLicxFiles;BeforeCompile">
+		<CreateEmptyLicenseLicxTask ProjectName="$(ProjectName)" ProjectDir="$(ProjectDir)" Language="$(Language)" />
   </Target>
 </Project>

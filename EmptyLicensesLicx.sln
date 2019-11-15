@@ -14,7 +14,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3C6F07A-C60E-466C-A305-7E16996B9307}"
 	ProjectSection(SolutionItems) = preProject
 		src\EmptyLicensesLicx.nuspec = src\EmptyLicensesLicx.nuspec
-		src\readme.txt = src\readme.txt
+		src\Readme.txt = src\Readme.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{C778E55F-31DE-426A-8783-87A5406AB90E}"

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata minClientVersion="3.3">
     <id>EmptyLicensesLicx</id>
-    <version>$version$</version>
+    <version>0.0.1-local</version>
     <title>Empty Licenses.licx for .NET projects</title>
     <authors>Caio Proiete</authors>
     <owners>caioproiete</owners>
@@ -22,7 +22,7 @@
     <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
-    <file src="readme.txt" />
+    <file src="Readme.txt" />
     <file src="build\EmptyLicensesLicx.targets" target="build" />
   </files>
 </package>

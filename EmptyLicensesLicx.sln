@@ -3,25 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWpfAppTestHarness", "tests\CSharpWpfAppTestHarness\CSharpWpfAppTestHarness.csproj", "{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1B668FBE-1754-467B-9D1E-7AF0799013AB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinFormsAppTestHarness", "tests\CSharpWinFormsAppTestHarness\CSharpWinFormsAppTestHarness.csproj", "{C9E63CEE-928C-4183-A609-C58169BC90FF}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3C6F07A-C60E-466C-A305-7E16996B9307}"
-	ProjectSection(SolutionItems) = preProject
-		src\EmptyLicensesLicx.nuspec = src\EmptyLicensesLicx.nuspec
-		src\Readme.txt = src\Readme.txt
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{C778E55F-31DE-426A-8783-87A5406AB90E}"
-	ProjectSection(SolutionItems) = preProject
-		src\build\EmptyLicensesLicx.targets = src\build\EmptyLicensesLicx.targets
-	EndProjectSection
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWinFormsAppTestHarness", "tests\VBNetWinFormsAppTestHarness\VBNetWinFormsAppTestHarness.vbproj", "{428915B2-357C-4BD1-BDFA-977A5B05E648}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{1B9C665B-59F6-4ED2-A652-5C048F968688}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -33,7 +14,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{1B9C66
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWpfAppTestHarness", "tests\VBNetWpfAppTestHarness\VBNetWpfAppTestHarness.vbproj", "{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C3C6F07A-C60E-466C-A305-7E16996B9307}"
+	ProjectSection(SolutionItems) = preProject
+		src\EmptyLicensesLicx.nuspec = src\EmptyLicensesLicx.nuspec
+		src\EmptyLicensesLicx.targets = src\EmptyLicensesLicx.targets
+		src\Readme.txt = src\Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{F1A34F24-05A7-43BA-8F6D-91B17A612E49}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "net472", "net472", "{F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWinFormsAppNet472", "sample\net472\CSharpWinFormsAppNet472\CSharpWinFormsAppNet472.csproj", "{CD7A4585-2CC2-4577-9A5E-A9DDF9395708}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpWpfAppNet472", "sample\net472\CSharpWpfAppNet472\CSharpWpfAppNet472.csproj", "{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWinFormsAppNet472", "sample\net472\VBNetWinFormsAppNet472\VBNetWinFormsAppNet472.vbproj", "{FA16E3D7-C0EC-4362-99FC-685FA26CC884}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWpfAppNet472", "sample\net472\VBNetWpfAppNet472\VBNetWpfAppNet472.vbproj", "{8A3D908E-BBF1-44BE-A260-A7020BD128A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,32 +39,32 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C9E63CEE-928C-4183-A609-C58169BC90FF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD7A4585-2CC2-4577-9A5E-A9DDF9395708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD7A4585-2CC2-4577-9A5E-A9DDF9395708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD7A4585-2CC2-4577-9A5E-A9DDF9395708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD7A4585-2CC2-4577-9A5E-A9DDF9395708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA16E3D7-C0EC-4362-99FC-685FA26CC884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA16E3D7-C0EC-4362-99FC-685FA26CC884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA16E3D7-C0EC-4362-99FC-685FA26CC884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA16E3D7-C0EC-4362-99FC-685FA26CC884}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3D908E-BBF1-44BE-A260-A7020BD128A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3D908E-BBF1-44BE-A260-A7020BD128A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3D908E-BBF1-44BE-A260-A7020BD128A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3D908E-BBF1-44BE-A260-A7020BD128A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F69F7800-F4B9-4FD8-B00B-0A8FCF7CDAA3} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
-		{C9E63CEE-928C-4183-A609-C58169BC90FF} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
-		{C778E55F-31DE-426A-8783-87A5406AB90E} = {C3C6F07A-C60E-466C-A305-7E16996B9307}
-		{428915B2-357C-4BD1-BDFA-977A5B05E648} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
-		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
+		{F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C} = {F1A34F24-05A7-43BA-8F6D-91B17A612E49}
+		{CD7A4585-2CC2-4577-9A5E-A9DDF9395708} = {F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C}
+		{A5BDC127-1CDE-431E-8326-FD3AF18CCD2C} = {F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C}
+		{FA16E3D7-C0EC-4362-99FC-685FA26CC884} = {F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C}
+		{8A3D908E-BBF1-44BE-A260-A7020BD128A3} = {F3BE5AA1-22F5-4CB7-A88D-A77CA9BB989C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5B2B04F-C390-4B98-926D-0B123B898D19}

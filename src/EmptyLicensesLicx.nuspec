@@ -16,13 +16,13 @@
       Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file* is always empty before the compiler runs.
       * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
-    <copyright>Copyright (c) Caio Proiete 2016-2018</copyright>
+    <copyright>Copyright (c) Caio Proiete 2016-2019</copyright>
     <language>en-US</language>
-    <tags>licenses licx Licenses.licx CI MSBuild Infragistics DevExpress</tags>
+    <tags>licenses licx Licenses.licx CI MSBuild Telerik DevExpress Infragistics</tags>
     <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
     <file src="Readme.txt" />
-    <file src="build\EmptyLicensesLicx.targets" target="build" />
+    <file src="EmptyLicensesLicx.targets" target="build" />
   </files>
 </package>

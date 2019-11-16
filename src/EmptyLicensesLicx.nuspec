@@ -7,6 +7,7 @@
     <authors>Caio Proiete</authors>
     <owners>caioproiete</owners>
     <iconUrl>https://raw.github.com/caioproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
+    <releaseNotes>https://github.com/caioproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
     <licenseUrl>https://github.com/caioproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
     <repository type="git" url="https://github.com/caioproiete/EmptyLicensesLicx" />
     <projectUrl>https://github.com/caioproiete/EmptyLicensesLicx</projectUrl>

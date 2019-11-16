@@ -20,29 +20,29 @@ try
     string licxDirectoryPath;
 
     switch (Language)
-		{
-		    case "C#":
-				    licxDirectoryPath = Path.Combine(ProjectDir, "Properties");
-						break;
-						
-		    case "VB":
-				    licxDirectoryPath = Path.Combine(ProjectDir, "My Project");
-						break;
+    {
+        case "C#":
+            licxDirectoryPath = Path.Combine(ProjectDir, "Properties");
+            break;
+            
+        case "VB":
+            licxDirectoryPath = Path.Combine(ProjectDir, "My Project");
+            break;
 
-		    default:
-				    throw new NotSupportedException(ProjectName + ": Language not supported: " + Language);
-		}
+        default:
+            throw new NotSupportedException(ProjectName + ": Language not supported: " + Language);
+    }
 
     if (!Directory.Exists(licxDirectoryPath))
-		{
-				Log.LogMessage(MessageImportance.Normal, ProjectName + " -> " + licxDirectoryPath);
+    {
+        Log.LogMessage(MessageImportance.Normal, ProjectName + " -> " + licxDirectoryPath);
 
-				try
-				{
+        try
+        {
             Directory.CreateDirectory(licxDirectoryPath);
-				}
-				catch(Exception dex)
-				{
+        }
+        catch(Exception dex)
+        {
             if (dex is IOException
                 || dex is UnauthorizedAccessException
                 || dex is PathTooLongException
@@ -55,31 +55,31 @@ try
             {
                 throw;
             }
-				}
-		}
+        }
+    }
 
     var licxFilePath = Path.Combine(licxDirectoryPath, "licenses.licx");
 
     var licxFileInfo = new FileInfo(licxFilePath);
     if (licxFileInfo.Exists)
     {
-		    if (licxFileInfo.Length == 0)
-				{
+        if (licxFileInfo.Length == 0)
+        {
             return true;
-				}
+        }
 
-				if (licxFileInfo.IsReadOnly)
-				{
+        if (licxFileInfo.IsReadOnly)
+        {
             licxFileInfo.IsReadOnly = false;
-				}
+        }
     }
 
-		Log.LogMessage(MessageImportance.High, ProjectName + " -> " + licxFilePath);
+    Log.LogMessage(MessageImportance.High, ProjectName + " -> " + licxFilePath);
 
     new FileStream(licxFilePath, FileMode.Create, FileAccess.Write, FileShare.Read)
-		    .Dispose();
+        .Dispose();
 
-		Log.LogMessage(MessageImportance.Normal, ProjectName + ": Empty licenses.licx file created");
+    Log.LogMessage(MessageImportance.Normal, ProjectName + ": Empty licenses.licx file created");
 }
 catch(Exception ex)
 {
@@ -92,13 +92,13 @@ catch(Exception ex)
 	</UsingTask>
 
 	<PropertyGroup>
-    <CompileLicxFilesDependsOn>
+		<CompileLicxFilesDependsOn>
 			$(CompileLicxFilesDependsOn);
 			CreateEmptyLicenseLicx;
 		</CompileLicxFilesDependsOn>
-  </PropertyGroup>
+	</PropertyGroup>
 
-  <Target Name="CreateEmptyLicenseLicx" BeforeTargets="CompileLicxFiles;BeforeCompile">
+	<Target Name="CreateEmptyLicenseLicx" BeforeTargets="CompileLicxFiles;BeforeCompile">
 		<CreateEmptyLicenseLicxTask ProjectName="$(ProjectName)" ProjectDir="$(ProjectDir)" Language="$(Language)" />
-  </Target>
+	</Target>
 </Project>

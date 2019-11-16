@@ -33,6 +33,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{1B9C66
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBNetWpfAppTestHarness", "tests\VBNetWpfAppTestHarness\VBNetWpfAppTestHarness.vbproj", "{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{428915B2-357C-4BD1-BDFA-977A5B05E648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{C9E63CEE-928C-4183-A609-C58169BC90FF} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 		{C778E55F-31DE-426A-8783-87A5406AB90E} = {C3C6F07A-C60E-466C-A305-7E16996B9307}
 		{428915B2-357C-4BD1-BDFA-977A5B05E648} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
+		{A2051E50-E85C-43C4-A6A2-E9F444D6E0A9} = {1B668FBE-1754-467B-9D1E-7AF0799013AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5B2B04F-C390-4B98-926D-0B123B898D19}

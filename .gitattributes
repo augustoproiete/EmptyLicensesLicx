@@ -3,3 +3,6 @@
 
 # Explicitly declare files that should always be converted to LF regardless of platform
 *.dotsettings text eol=lf
+
+# Tell GitHub to classify this repo as a CSharp repo
+*.cs linguist-language=C#

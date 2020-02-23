@@ -6,3 +6,4 @@
 
 # Tell GitHub to classify this repo as a CSharp repo
 *.cs linguist-language=C#
+*.cmd linguist-language=C#

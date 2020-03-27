@@ -2,6 +2,9 @@
 
 > An easy approach to building apps that use third-party controls from companies such as Telerik, DevExpress, Infragistics, and others, without having to install these controls in every single build node, for the sake of compiling the `licenses.licx` file.
 
+## Give a Star! :star:
+
+If you like or are using this project please give it a star. Thanks!
 
 ## Overview
 

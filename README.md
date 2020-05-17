@@ -41,7 +41,7 @@ The solution for the `licenses.licx` problem is to make sure you **always have a
 
 This means every developer in a team needs to know that **and** remember that before checking-in code to source control.
 
-And that is the main reason I've created [EmptyLicensesLicx](http://caioproiete.github.io/EmptyLicensesLicx).
+And that is the main reason I've created [EmptyLicensesLicx](https://augustoproiete.github.io/EmptyLicensesLicx).
 
 After installing it via [NuGet](https://www.nuget.org/packages/EmptyLicensesLicx):
 
@@ -52,6 +52,14 @@ or
 ```powershell
 > dotnet add package EmptyLicensesLicx
 ``` 
-a reference to the [EmptyLicensesLicx.targets file](https://github.com/caioproiete/EmptyLicensesLicx/blob/master/src/build/EmptyLicensesLicx.targets) will be added to your project, which will hook into the build pipeline and to make sure that the `licenses.licx` file is always empty before the compiler tries to compile it.
+a reference to the [EmptyLicensesLicx.targets file](https://github.com/augustoproiete/EmptyLicensesLicx/blob/master/src/build/EmptyLicensesLicx.targets) will be added to your project, which will hook into the build pipeline and to make sure that the `licenses.licx` file is always empty before the compiler tries to compile it.
 
 This means you no longer will see the "_cannot transform_" errors in Visual Studio, or when using MSBuild in your continuous integration server. In fact, if this is the only reason you have been installing these third-party controls in your build servers, you no longer have to.
+
+## Release History
+
+Click on the [Releases](https://github.com/augustoproiete/EmptyLicensesLicx/releases) tab on GitHub.
+
+---
+
+_Copyright &copy; 2016-2020 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._

@@ -4,20 +4,20 @@
     <id>EmptyLicensesLicx</id>
     <version>0.0.1-local</version>
     <title>Empty Licenses.licx for .NET projects</title>
-    <authors>Caio Proiete</authors>
-    <owners>caioproiete</owners>
-    <iconUrl>https://raw.github.com/caioproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
-    <releaseNotes>https://github.com/caioproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
-    <licenseUrl>https://github.com/caioproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
-    <repository type="git" url="https://github.com/caioproiete/EmptyLicensesLicx" />
-    <projectUrl>https://github.com/caioproiete/EmptyLicensesLicx</projectUrl>
+    <authors>C. Augusto Proiete</authors>
+    <owners>augustoproiete</owners>
+    <iconUrl>https://raw.github.com/augustoproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
+    <releaseNotes>https://github.com/augustoproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
+    <licenseUrl>https://github.com/augustoproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
+    <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx" />
+    <projectUrl>https://github.com/augustoproiete/EmptyLicensesLicx</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>An easy approach to resolve issues with compiling the licenses.licx file.</summary>
     <description>
       Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file* is always empty before the compiler runs.
       * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
-    <copyright>Copyright (c) Caio Proiete 2016-2019</copyright>
+    <copyright>Copyright (c) C. Augusto Proiete 2016-2020</copyright>
     <language>en-US</language>
     <tags>licenses licx Licenses.licx CI MSBuild Telerik DevExpress Infragistics</tags>
     <developmentDependency>true</developmentDependency>

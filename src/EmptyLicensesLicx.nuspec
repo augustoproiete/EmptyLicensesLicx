@@ -8,7 +8,7 @@
     <owners>augustoproiete</owners>
     <iconUrl>https://raw.github.com/augustoproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
     <releaseNotes>https://github.com/augustoproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
-    <licenseUrl>https://github.com/augustoproiete/EmptyLicensesLicx/blob/master/LICENSE</licenseUrl>
+    <license type="file">LICENSE</license>
     <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx" />
     <projectUrl>https://github.com/augustoproiete/EmptyLicensesLicx</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -25,5 +25,6 @@
   <files>
     <file src="Readme.txt" />
     <file src="EmptyLicensesLicx.targets" target="build" />
+    <file src="..\LICENSE" target="\LICENSE" />
   </files>
 </package>

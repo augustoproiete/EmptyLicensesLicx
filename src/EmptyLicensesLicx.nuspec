@@ -6,7 +6,7 @@
     <title>Empty Licenses.licx for .NET projects</title>
     <authors>C. Augusto Proiete</authors>
     <owners>augustoproiete</owners>
-    <iconUrl>https://raw.github.com/augustoproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
+    <icon>images\icon.png</icon>
     <releaseNotes>https://github.com/augustoproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
     <license type="file">LICENSE</license>
     <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx" />
@@ -26,5 +26,6 @@
     <file src="Readme.txt" />
     <file src="EmptyLicensesLicx.targets" target="build" />
     <file src="..\LICENSE" target="\LICENSE" />
+    <file src="..\img\empty-licenses-licx.png" target="images\icon.png" />
   </files>
 </package>

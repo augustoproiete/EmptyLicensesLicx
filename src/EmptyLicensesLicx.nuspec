@@ -7,6 +7,7 @@
     <authors>C. Augusto Proiete</authors>
     <owners>augustoproiete</owners>
     <icon>images\icon.png</icon>
+    <iconUrl>https://raw.githubusercontent.com/augustoproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
     <releaseNotes>https://github.com/augustoproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
     <license type="file">LICENSE</license>
     <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx" />

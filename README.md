@@ -1,4 +1,4 @@
-# EmptyLicensesLicx [![Latest version](https://img.shields.io/nuget/v/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![NuGet Downloads](https://img.shields.io/nuget/dt/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx/)
+# EmptyLicensesLicx [![Latest version](https://img.shields.io/nuget/v/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![NuGet Downloads](https://img.shields.io/nuget/dt/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![Stack Overflow](https://img.shields.io/badge/stack%20overflow-licenses.licx-orange.svg)](http://stackoverflow.com/questions/tagged/licenses.licx)
 
 > An easy approach to building apps that use third-party controls from companies such as Telerik, DevExpress, Infragistics, and others, without having to install these controls in every single build node, for the sake of compiling the `licenses.licx` file.
 

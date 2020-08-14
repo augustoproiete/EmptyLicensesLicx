@@ -1,6 +1,20 @@
-# EmptyLicensesLicx [![Latest version](https://img.shields.io/nuget/v/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![NuGet Downloads](https://img.shields.io/nuget/dt/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![Stack Overflow](https://img.shields.io/badge/stack%20overflow-licenses.licx-orange.svg)](http://stackoverflow.com/questions/tagged/licenses.licx)
+| README.md |
+|:---|
 
-> An easy approach to building apps that use third-party controls from companies such as Telerik, DevExpress, Infragistics, and others, without having to install these controls in every single build node, for the sake of compiling the `licenses.licx` file.
+<div align="center">
+
+<img src="img/empty-licenses-licx.png" alt="EmptyLicensesLicx" width="100" />
+
+</div>
+
+<h1 align="center">EmptyLicensesLicx</h1>
+<div align="center">
+
+An easy approach to building apps that use third-party controls from companies such as Telerik, DevExpress, Infragistics, and others, without having to install these controls in every single build node, for the sake of compiling the `licenses.licx` file.
+
+[![Latest version](https://img.shields.io/nuget/v/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![NuGet Downloads](https://img.shields.io/nuget/dt/EmptyLicensesLicx.svg)](https://www.nuget.org/packages/EmptyLicensesLicx) [![Stack Overflow](https://img.shields.io/badge/stack%20overflow-licenses.licx-orange.svg)](http://stackoverflow.com/questions/tagged/licenses.licx)
+
+</div>
 
 ## Give a Star! :star:
 
@@ -27,13 +41,11 @@ Infragistics.Win.Misc.UltraGroupBox, Infragistics2.Win.Misc.v8.1, Version=8.1.20
 
 Each line contains a reference to a type that is contained in an assembly, in a comma delimited list format. The first value is the full name of the class, the second is the assembly that contains the class, and the other values are part of the assembly's identity.
 
-
 ## The Problem
 
 There are many issues caused by having to compile this file. For example, when you upgrade a solution to the latest version of the third-party controls you use, you'll get compile errors until the file is updated manually by you, or until you manage to get Visual Studio to regenerate it.
 
 But that's not the biggest issue with `licenses.licx`. The thing is that Visual Studio has a propensity of touching this file if you open the solution (that's "touching" as in changing the file date to the current date/time). This plays havoc with licensing, especially if you happen to open the solution on a machine that doesn't have the third-party controls installed. Suddenly your build machine will throw off these "cannot transform" messages and you're left wondering what went wrong. Another prevalent issue is when you have a team of developers working on a solution: Visual Studio will make changes to this file as they interact with the third-party controls during development.
-
 
 ## The Solution
 

@@ -63,10 +63,20 @@ PM> Install-Package EmptyLicensesLicx
 or
 ```powershell
 > dotnet add package EmptyLicensesLicx
-``` 
+```
 a reference to the [EmptyLicensesLicx.targets file](https://github.com/augustoproiete/EmptyLicensesLicx/blob/master/src/build/EmptyLicensesLicx.targets) will be added to your project, which will hook into the build pipeline and to make sure that the `licenses.licx` file is always empty before the compiler tries to compile it.
 
 This means you no longer will see the "_cannot transform_" errors in Visual Studio, or when using MSBuild in your continuous integration server. In fact, if this is the only reason you have been installing these third-party controls in your build servers, you no longer have to.
+
+## Does that mean no license is embedded in my app?
+
+Yes, that's correct. In most cases this is not problem at all, and it all depends on how the licensing of the components you're using work. Most .NET control vendors nowadays such as DevExpress, Telerik, Infragistics, ComponentOne, etc. **do not require a license for _distributing_ your application** (i.e. There's no license check when your application runs in `Release` mode), so you don't need to embed any licenses with your apps during build for it to run.
+
+Most vendors **require you to have a valid license for _development_ purposes only**, and the license check is enforced during development time, usually when you're designing your UI (e.g. using the Visual Studio designer), and/or when you're running your app in `Debug` mode.
+
+This is why having an empty `licenses.licx` works for the purposes of building your app, and it also saves you from having to install the vendor control suite on your build server.
+
+However, if you are using a third-party control that requires a runtime license (i.e. the license is required to run your app on any machine) then the empty `licenses.licx` doesn't make sense for you, and you do need to embed the licenses with your app during the build.
 
 ## Release History
 

@@ -10,7 +10,7 @@
     <iconUrl>https://raw.githubusercontent.com/augustoproiete/EmptyLicensesLicx/master/img/empty-licenses-licx.png</iconUrl>
     <releaseNotes>https://github.com/augustoproiete/EmptyLicensesLicx/releases/tag/v$version$</releaseNotes>
     <license type="expression">MIT</license>
-    <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx" />
+    <repository type="git" url="https://github.com/augustoproiete/EmptyLicensesLicx.git" />
     <projectUrl>https://github.com/augustoproiete/EmptyLicensesLicx</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>An easy approach to resolve issues with compiling the licenses.licx file.</summary>
@@ -18,7 +18,7 @@
       Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file* is always empty before the compiler runs.
       * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
-    <copyright>Copyright (c) C. Augusto Proiete 2016-2020</copyright>
+    <copyright>Copyright (c) 2016-2021 C. Augusto Proiete &amp; Contributors</copyright>
     <language>en-US</language>
     <tags>licenses licx Licenses.licx CI MSBuild Telerik DevExpress Infragistics</tags>
     <developmentDependency>true</developmentDependency>

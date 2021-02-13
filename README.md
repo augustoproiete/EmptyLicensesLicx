@@ -84,4 +84,4 @@ Click on the [Releases](https://github.com/augustoproiete/EmptyLicensesLicx/rele
 
 ---
 
-_Copyright &copy; 2016-2020 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._
+_Copyright &copy; 2016-2021 C. Augusto Proiete & Contributors - Provided under the [MIT License](LICENSE)._

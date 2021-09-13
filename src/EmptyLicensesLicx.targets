@@ -16,9 +16,13 @@
 //
 -->
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <EmptyLicensesLicxTaskFactory>CodeTaskFactory</EmptyLicensesLicxTaskFactory>
+    <EmptyLicensesLicxTaskFactory Condition="'$(MSBuildRuntimeType)' == 'Core'">RoslynCodeTaskFactory</EmptyLicensesLicxTaskFactory>
+  </PropertyGroup>
 	<UsingTask
 		TaskName="CreateEmptyLicenseLicxTask"
-		TaskFactory="CodeTaskFactory"
+		TaskFactory="$(EmptyLicensesLicxTaskFactory)"
 		AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
 		<ParameterGroup>
 			<ProjectName ParameterType="System.String" Required="true" />

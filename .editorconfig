@@ -10,10 +10,7 @@ insert_final_newline = true
 indent_style = space
 indent_size = 4
 
-[*.{proj,props,sln,targets,sql}]
-indent_style = tab
-
-[*.{dna,config,nuspec,csproj,vcxproj,vcproj,targets,ps1,resx}]
+[*.{config,nuspec,csproj,vcxproj,vcproj,targets,ps1,resx}]
 indent_size = 2
 
 [*.{cpp,h,def}]

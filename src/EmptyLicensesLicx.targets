@@ -20,21 +20,21 @@
     <EmptyLicensesLicxTaskFactory>CodeTaskFactory</EmptyLicensesLicxTaskFactory>
     <EmptyLicensesLicxTaskFactory Condition="'$(MSBuildRuntimeType)' == 'Core'">RoslynCodeTaskFactory</EmptyLicensesLicxTaskFactory>
   </PropertyGroup>
-	<UsingTask
-		TaskName="CreateEmptyLicenseLicxTask"
-		TaskFactory="$(EmptyLicensesLicxTaskFactory)"
-		AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
-		<ParameterGroup>
-			<ProjectName ParameterType="System.String" Required="true" />
-			<ProjectDir ParameterType="System.String" Required="true" />
-			<Language ParameterType="System.String" Required="true" />
-		</ParameterGroup>
-		<Task>
-			<Using Namespace="System" />
-			<Using Namespace="System.IO" />
-			<Using Namespace="System.Security" />
-			<Code Type="Fragment" Language="cs">
-				<![CDATA[
+  <UsingTask
+    TaskName="CreateEmptyLicenseLicxTask"
+    TaskFactory="$(EmptyLicensesLicxTaskFactory)"
+    AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+    <ParameterGroup>
+      <ProjectName ParameterType="System.String" Required="true" />
+      <ProjectDir ParameterType="System.String" Required="true" />
+      <Language ParameterType="System.String" Required="true" />
+    </ParameterGroup>
+    <Task>
+      <Using Namespace="System" />
+      <Using Namespace="System.IO" />
+      <Using Namespace="System.Security" />
+      <Code Type="Fragment" Language="cs">
+        <![CDATA[
 
 try
 {
@@ -108,18 +108,18 @@ catch(Exception ex)
 }
 
 ]]>
-			</Code>
-		</Task>
-	</UsingTask>
+      </Code>
+    </Task>
+  </UsingTask>
 
-	<PropertyGroup>
-		<CompileLicxFilesDependsOn>
-			$(CompileLicxFilesDependsOn);
-			CreateEmptyLicenseLicx;
-		</CompileLicxFilesDependsOn>
-	</PropertyGroup>
+  <PropertyGroup>
+    <CompileLicxFilesDependsOn>
+      $(CompileLicxFilesDependsOn);
+      CreateEmptyLicenseLicx;
+    </CompileLicxFilesDependsOn>
+  </PropertyGroup>
 
-	<Target Name="CreateEmptyLicenseLicx" BeforeTargets="CompileLicxFiles;BeforeCompile">
-		<CreateEmptyLicenseLicxTask ProjectName="$(ProjectName)" ProjectDir="$(ProjectDir)" Language="$(Language)" />
-	</Target>
+  <Target Name="CreateEmptyLicenseLicx" BeforeTargets="CompileLicxFiles;BeforeCompile">
+    <CreateEmptyLicenseLicxTask ProjectName="$(ProjectName)" ProjectDir="$(ProjectDir)" Language="$(Language)" />
+  </Target>
 </Project>

@@ -1,22 +1,28 @@
-#Ignore files created by build.cmd
-.nuget/
-out/
-
-#Ignore thumbnails created by Windows
+#windows
 Thumbs.db
 
-#Ignore metadata created by OSX
+#osx
 .DS_Store
 ._*
 
-#Ignore files created by Visual Studio
+#visual-studio
 .vs/
 *.user
 *.suo
+*.tmp_proj
+*.cache
+*.vsdoc
 [Oo]bj/
 [Bb]in/
 [Dd]ebug/
 [Rr]elease/
+[Ll]og/
+[Tt]emp/
 
-#Ignore files created by ReSharper
-_ReSharper*/
+#nuget
+*.nupkg
+**/packages/*
+
+#cake
+.cake/
+/artifacts/*

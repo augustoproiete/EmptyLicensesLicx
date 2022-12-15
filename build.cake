@@ -1,7 +1,7 @@
 #tool "nuget:?package=NuGet.CommandLine&version=6.3.1"
 
-#addin "nuget:?package=Cake.MinVer&version=2.0.0"
-#addin "nuget:?package=Cake.Args&version=2.0.0"
+#addin "nuget:?package=Cake.MinVer&version=3.0.0"
+#addin "nuget:?package=Cake.Args&version=3.0.0"
 
 using System.Net.Http;
 
@@ -11,7 +11,7 @@ var buildVersion = MinVer(s => s.WithTagPrefix("v").WithDefaultPreReleasePhase("
 Task("clean")
     .Does(() =>
 {
-    CleanDirectories("./artifacts/**");
+    CleanDirectories("./artifact/**");
 });
 
 Task("pack")
@@ -25,7 +25,7 @@ Task("pack")
     NuGetPack(nuspecFilePath, new NuGetPackSettings
     {
         Version = buildVersion.PackageVersion,
-        OutputDirectory = "./artifacts/nuget",
+        OutputDirectory = "./artifact/nuget",
     });
 });
 
@@ -55,7 +55,7 @@ Task("push")
         ApiKey = apiKey,
     };
 
-    foreach (var nugetPackageFile in GetFiles("./artifacts/nuget/*.nupkg"))
+    foreach (var nugetPackageFile in GetFiles("./artifact/nuget/*.nupkg"))
     {
         DotNetNuGetPush(nugetPackageFile.FullPath, nugetPushSettings);
     }

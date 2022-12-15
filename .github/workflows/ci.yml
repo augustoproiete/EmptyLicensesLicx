@@ -26,14 +26,12 @@ jobs:
       fail-fast: false
       matrix:
         job:
-          - os: ubuntu-20.04
+          - os: ubuntu-22.04
             build: ./build.sh
             push: true
-          - os: windows-2019
-            build: ./build.cmd
           - os: windows-2022
             build: ./build.cmd
-          - os: macos-11
+          - os: macos-12
             build: ./build.sh
     name: ${{ matrix.job.os }}
     runs-on: ${{ matrix.job.os }}
@@ -41,7 +39,7 @@ jobs:
       - name: Setup net6.0
         uses: actions/setup-dotnet@v3.0.3
         with:
-          dotnet-version: "6.0.100"
+          dotnet-version: "6.0.404"
       - name: Run dotnet --info
         run: dotnet --info
       - uses: actions/checkout@v3.2.0
@@ -55,4 +53,4 @@ jobs:
         with:
           if-no-files-found: warn
           name: package
-          path: artifacts/nuget/**/*
+          path: artifact/nuget/**/*

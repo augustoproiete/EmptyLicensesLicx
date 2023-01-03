@@ -18,7 +18,7 @@
       Hooks in the build pipeline to make sure that the `Properties\licenses.licx` file* is always empty before the compiler runs.
       * (or `My Project\licenses.licx` for VB .NET projects)
     </description>
-    <copyright>Copyright (c) 2016-2021 C. Augusto Proiete &amp; Contributors</copyright>
+    <copyright>Copyright (c) 2016-2023 C. Augusto Proiete &amp; Contributors</copyright>
     <language>en-US</language>
     <tags>licenses licx Licenses.licx CI MSBuild Telerik DevExpress Infragistics</tags>
     <developmentDependency>true</developmentDependency>

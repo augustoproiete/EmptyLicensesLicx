@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("CSharpWpfAppNet472")]
-[assembly: AssemblyCopyright("Copyright 2016-2021 C. Augusto Proiete & Contributors")]
+[assembly: AssemblyCopyright("Copyright 2016-2023 C. Augusto Proiete & Contributors")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

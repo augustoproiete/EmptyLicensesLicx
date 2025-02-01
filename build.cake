@@ -1,6 +1,6 @@
 #tool "nuget:?package=NuGet.CommandLine&version=6.12.2"
 
-#addin "nuget:?package=Cake.MinVer&version=3.0.0"
+#addin "nuget:?package=Cake.MinVer&version=4.0.0"
 #addin "nuget:?package=Cake.Args&version=3.0.0"
 
 using System.Net.Http;
